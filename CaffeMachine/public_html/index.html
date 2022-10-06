@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+  <head>
+    <title>Coffee Mashine - javaScript Homework</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div id="caffe-mashine">
+      <div id="caffe-screen" class="d-flex flex-column justify-between">
+        <p>Credit: <span id="credit"> </span>RSD</p>
+        <p id="message" class="text-center">DISPLAY MESAGE</p>
+
+        <p id="status">
+          Water: <span id="water-status"> </span> Coffe:
+          <span id="coffee-status"> </span> Milk <span id="milk-status"> </span>
+        </p>
+      </div>
+      <div></div>
+      <button
+        id="add-credit"
+        class="d-block"
+        onclick="caffeMachine.addCredit()"
+      >
+        Add Credit
+      </button>
+      <div class="d-flex justify-between">
+        <button id="add-water" onclick="caffeMachine.addWater()">
+          ADD WATER
+        </button>
+        <button id="add-coffee" onclick="caffeMachine.addCoffee()">
+          ADD COFFEE
+        </button>
+        <button id="add-milk" onclick="caffeMachine.addMilk()">ADD MILK</button>
+      </div>
+      <div class="d-flex justify-between">
+        <button id="short-espresso" onclick="caffeMachine.makeShortEspresso()">
+          Short Espreso
+        </button>
+        <button id="long-espresso" onclick="caffeMachine.makeLongEspresso()">
+          Long Espreso
+        </button>
+        <button id="capuchino" onclick="caffeMachine.makeCapuchino()">
+          Capuchino
+        </button>
+      </div>
+    </div>
+
+    <script src="caffeMachine.js"></script>
+  </body>
+</html>
